@@ -1,0 +1,36 @@
+html{
+background-color: lavender;
+}
+
+*{
+    margin: 0PX;
+    padding: 0px;
+    list-style: none;
+}
+
+.main{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    background-color: ivory;
+    margin: auto;
+}
+
+.main img{
+    width: 100%;
+}
+.thumbs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbs li{
+    width: 100%;
+    padding: 10px;
+   box-shadow: 1px 1px 10px 5px lightcoral;
+}
+
+.thumbs li img{
+width: 100%;
+}

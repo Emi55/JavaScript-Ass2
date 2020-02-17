@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script>
+function imageChanger(num){
+
+    var imgSrc = 'images/flowers' + num + '.jpg';
+    document.getElementById('mainPic').src=imgSrc;
+}
+</script>
+</head>
+<body>
+    
+    <div class="main" >
+        <img id="mainPic" src="images/flowers-pink-large.jpg">
+    </div>
+    <ul>
+        <li><img id="0" src="images/flowers-purple-small.jpg" onclick="imageChanger(0)"> </li>
+        <li><img id="1" src="images/flowers-red-small.jpg" onclick="imageChanger(1)"> </li>
+        <li><img id="2" src="images/flowers-white-small.jpg" onclick="imageChanger(2)"> </li>
+        <li><img id="3" src="images/flowers-yellow-small.jpg" onclick="imageChanger(3)"> </li>
+        <li><img id="4" src="images/flowers-pink-small.jpg" onclick="imageChanger(4)"> </li>
+
+    </ul>
+</body>

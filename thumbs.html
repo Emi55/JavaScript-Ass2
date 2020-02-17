@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!--  Link the different pages together -->
+
+	<meta charset="utf-8">
+	<title>Image Gallery | COMP1073 Client-Side JavaScript</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- code the JavaScript Part -->
+
+	<script>
+		function thumbchange(num){
+			var thumb = 'images/flowers' + num + '.jpg';
+			document.getElementById("mainImg").src = 	thumb;
+		}
+	</script>		
+</head>
+<body>
+
+	<h1>Image Gallery</h1>
+	<section id="gallery">
+		<figure>
+
+			<!-- I followed Scott codes at first then, I did not seem to function but still I left the code and commented it instead -->
+             <!-- <div class="full-img">
+			 <img class="displayed-img" src="images/flowers-pink-large.jpg" alt="" width="1200" height="800" />
+			<img class="displayed-img" src="images/flowers-purple-large.jpg" alt="" width="1200" height="800" />
+			<img class="displayed-img" src="images/flowers-red-large.jpg" alt="" width="1200" height="800" />
+			<img class="displayed-img" src="images/flowers-white-large.jpg" alt="" width="1200" height="800" />
+			<img class="displayed-img" src="images/flowers-yellow-large.jpg" alt="" width="1200" height="800" /> -->
+
+		<figcaption>Image title to appear here</figcaption>
+		</div>
+	</figure>
+
+	<!-- main image to be displayed -->
+	<div class="main">
+		<img id="mainImg" src="images/flowers-pink-large.jpg" alt="" width="1200" height="800" />
+
+		<!-- create an onclick event -->
+
+		<ul class="thumbs">
+			<li onclick="thumbchange(0)"> <img src="images/flowers-purple-small.jpg" alt="" width="240" height="160" /></li>
+			<li onclick="thumbchange(1)"><img src="images/flowers-red-small.jpg" alt="" width="240" height="160" /></li>
+			<li onclick="thumbchange(2)"><img src="images/flowers-white-small.jpg" alt="" width="240" height="160" /></li>
+			<li onclick="thumbchange(3)"><img src="images/flowers-yellow-small.jpg" alt="" width="240" height="160" /></li>
+			<li onclick="thumbchange(4)"><img src="images/flowers-pink-small.jpg" alt="" width="240" height="160" /></li>
+		</ul>
+		</div>
+		 
